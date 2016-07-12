@@ -1,5 +1,2 @@
-var PeerServer = require('./lib/server').PeerServer;
-var server = new PeerServer({
-	port: process.env.PORT || 9000,
-	key: 'peerjs'
-});
+var PeerServer = require('lib/server').PeerServer;
+var server = PeerServer({port: 9000, path: '/myapp'});
